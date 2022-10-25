@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Css Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Rumo a Marte</title>
+
+  <style>
+    .body {
+      background-image: url(../imagens/backgroundLp.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: right;
+      padding: 48px;
+    }
+    .container {
+      max-width: 540px;
+      background-color: #222222f1;
+      color: white;
+      padding: 20px;
+      border-radius: 15px;
+    }
+    .imagem{
+      display: flex;
+      justify-content: center;
+      padding: 10px 0px 25px 0px;
+    }
+    .img-fluid{
+      width: 250px;
+    }
+    .col-md-4{
+      width: 100%;
+      padding: 7px;
+    }
+    .nome{
+      margin: 7px;
+    }
+    .genero{
+      margin: 7px;
+    }
+    .treinamentos{
+      margin: 7px;
+    }
+    .qualidades{
+      margin: 7px;
+    }
+    .col-12{
+      display: flex;
+      justify-content: center;
+      margin: 7px;
+    }
+    .btn{
+      background-color: transparent;
+      border-color: #ff0043;
+      color: #ff0043;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #ff0043;
+      color: white;
+      border-color: #ff0043;
+    }
+    .container-text-center-footer {
+      display: flex;
+      justify-content: center;
+      margin: 35px;
+      color: white;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <div class="container">
+    <div class="imagem">
+        <img src="./imagens/logoOneBitDark.png" class="img-fluid" alt="...">
+    </div>
+  
+    <div class="nome">
+    <div class="col-md-4">
+          <p>1 - Qual seu nome?</p>
+          <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend" style="height: 100%;">Primeiro nome</span>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                  por favor insira seu primeiro nome.
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+          <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend" style="height: 100%;">Segundo Nome</span>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                  por favor insira seu segundo nome.
+            </div>
+          </div>
+    </div>
+  </div>
+
+  <div class="genero">
+    <p>2 - Qual é o seu gênero?</p>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Homem
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+      <label class="form-check-label" for="flexRadioDefault2">
+        Mulher
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+      <label class="form-check-label" for="flexRadioDefault2">
+        Prefiro não responder
+      </label>
+    </div>
+  </div>  
+
+  <div class="treinamentos">
+    <p>3 - Marque os treinamentos que você já fez:</p>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" >
+        <label class="form-check-label" for="flexSwitchCheckDefault">Treinamento básico de astronauta</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" >
+        <label class="form-check-label" for="flexSwitchCheckChecked">Treinamento físico básico</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" >
+        <label class="form-check-label" for="flexSwitchCheckDisabled">Treinamento avançado de astronauta</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" >
+        <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Treinamento físico intenso</label>
+      </div>
+  </div>    
+
+  <div class="qualidades">
+    <p>4 - Quais são suas qualidades?</p>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">Proativo</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">Ressitente</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+        <label class="form-check-label" for="inlineCheckbox3">Não vomito fácil</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+        <label class="form-check-label" for="inlineCheckbox4">Não temo marciano</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+        <label class="form-check-label" for="inlineCheckbox5">Já  vi todos os Star Wars</label>
+      </div>
+  </div>
+
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </div>
+</div>
+ <div class="container-text-center-footer">
+  <p>Feito por Yure Ribeiro - Todos os direitos reservados - 2022</p>
+ </div>
+
+    <!--script Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+</body>
+
+</html>
